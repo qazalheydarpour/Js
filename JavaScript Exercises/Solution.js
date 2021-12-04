@@ -13,22 +13,22 @@
 // console.log(reverse(12345))
 
 //2
-function IsPalindrome (n) {
-    if (typeof n !== 'string') {return 'ERROR'}
-    if (n.length < 2) {return 'YES'}
-    let temp = n.length - 1, index = 0;
-    for (let i = 0; i < n.length / 2; i++) {
-        index = i + temp
-        if (n[i] !== n[index]) return 'NO'
-        temp -= 2
-    }
-    return 'YES'
-}
-
-console.log(palindrome('mabam')) //yes
-console.log(palindrome('maabcaam')) //no
-console.log(palindrome(123)) //error
-console.log(palindrome('a')) //yes
+// function IsPalindrome (n) {
+//     if (typeof n !== 'string') {return 'ERROR'}
+//     if (n.length < 2) {return 'YES'}
+//     let temp = n.length - 1, index = 0;
+//     for (let i = 0; i < n.length / 2; i++) {
+//         index = i + temp
+//         if (n[i] !== n[index]) return 'NO'
+//         temp -= 2
+//     }
+//     return 'YES'
+// }
+//
+// console.log(palindrome('mabam')) //yes
+// console.log(palindrome('maabcaam')) //no
+// console.log(palindrome(123)) //error
+// console.log(palindrome('a')) //yes
 
 //3
 // const gcd = (a, b) => {
@@ -87,17 +87,17 @@ console.log(palindrome('a')) //yes
 // console.log(arrToString(myArr))
 //
 // //10
-// function dash (n) {
-//     const str = n.toString()
-//     const result = [str[0]]
-//     for(let x=1; x<str.length; x++) {
-//         if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
-//             result.push('-', str[x]);
-//         else
-//             result.push(str[x]);
-//     }
-//     return result.join('');
-// }
-//
-// console.log(dash(025468))
+function dash (n) {
+    const str = n.toString()
+    const result = [str[0]]
+    for(let x=1; x<str.length; x++) {
+        if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+            result.push('-', str[x]);
+        else
+            result.push(str[x]);
+    }
+    return result.join('');
+}
+
+console.log(dash(025468));
 

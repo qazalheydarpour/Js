@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>studentTable</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="tab tab-1">
+
+        <table id="table" >
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            </table>
+    </div>
+    <div class="tab tab-2">
+        <div>
+            <div class="input"><input typeof="text" name="id" id="id"> | ID  </div>
+            <div class="input"><input type="text" name="fName" id="fName" > | First Name</div>
+            <div class="input"><input type="text" name="lName" id="lName" > | Last Name </div>
+        </div>
+        <div id="button">
+            <button onclick="add()">Add</button> </br>
+            <button onclick="updateStudent()">Edit</button> </br>
+            <button onclick="removeStudent()">Remove</button>
+        </div>
+
+    </div>
+    <div id="instruction">
+        <p style="  background-color: white; border-radius: 5px; text-align: center"> INSTRUCTION </p>
+        <p> 1) type your data in boxes - click on <span style="color: deeppink; font-weight: bold">ADD</span> button to add it to the table </p>
+        <p> 2) type your iD in first Box with new data in other boxes</br> click on <span style="color: deeppink; font-weight: bold">EDIT</span> button to see changes in table </p>
+        <p> 3) type ID you want to remove it from table - click on <span style="color: deeppink; font-weight: bold">REMOVE</span> table </p>
+    </div>
+</div>
+
+<script src="javaScript.v02.js" ></script>
+</body>
+</html>
